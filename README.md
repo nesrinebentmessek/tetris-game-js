@@ -6,7 +6,7 @@ A Tetris game built using JavaScript, HTML, and CSS. The game includes colorful 
 
 - Use the arrow keys to move and rotate the blocks.
 - Clear horizontal lines to score points.
-- The game ends when the blocks reach the top.
+- When the blocks reach the top, you advance to the next level, and the game speeds up.
 
 ## Technologies Used
 
