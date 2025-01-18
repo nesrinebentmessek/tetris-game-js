@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>TETRIS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <img src="images/logo.png" width="200" id="logo">
+        <div id="tutorial" ></div>
+       <div id="grid"></div> 
+       
+       <div class="user" style="top:25px;">
+        <p>NEXT SHAPE: </p>
+        <div id="next_piece"></div></div> 
+       
+        <div class="user" style="bottom : 70px;">
+        <p>BEST SCORE:<span id="best_score"> 0 </span> </p>
+        <p>SCORE: <span id="score"> 0 </span> </p>
+        <p>LEVEL: <span id="level"> 0 </span> </p>
+       </div>
+
+
+       <button id="pause" class="button" onclick="pause()" style="background-color:#FF5F1F; " >PAUSE</button>
+       <button id="replay" class="button" onclick="reset_game(),button_audio()" style="background-color: #ca2e33; " >REPLAY</button>
+       <footer> &copy 2023 INFOA HOUSSEM BENSALAH AND NESRINE BEN TMESSEK.TETRIS. All rights reserved.</footer>
+      <script src="script.js"></script>
+
+
+
+
+    </body>
+</html>

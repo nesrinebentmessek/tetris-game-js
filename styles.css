@@ -1,0 +1,168 @@
+
+
+@font-face{
+    font-family: tetris;
+    src: url(fonts/arcade.TTF);
+}
+
+
+
+.user{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute ;
+    left: calc(50% + 200px);
+    background-color: black;  
+    font-family: tetris;
+    font-size: 30px;
+    color: white;
+
+}
+
+
+
+
+#next_piece{
+    
+    height: 175px;
+    margin :auto;
+    margin-bottom: 15%;
+    width : 125px;
+    background-image: url(images/bg.png);
+    border:solid .1em white;
+    
+    
+}
+
+
+
+#grid{
+    
+    width: 300px ;
+    height: 600px;
+    position: absolute;
+    left: calc(50% - 150px);
+    background-image: url(images/bg.png);
+    top :15px;
+    
+}
+
+#logo{
+    position: absolute;
+    left:calc(50% - 405px);
+    top: 25px;
+    
+}
+
+#tutorial{
+    position: absolute;
+    left:calc(50% - 430px);
+    top: 100px;
+    width: 250px;
+    height:437.5px;
+    background-image: url(images/tutorial.png);
+    background-color: black;
+    background-size: cover;
+}
+
+
+.square{
+    border: solid 1px black;
+    width:25px;
+    height:25px;
+    background-image: url(images/sprite.png);
+    box-shadow: 1px 2px white inset ;
+    position: absolute;
+    
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    border-top: solid 1px white;
+    height : 25px;
+    width : 100%;
+    background-color: black;
+    color :white;
+    text-align: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    margin: 0;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(images/bgg.jpg);
+}
+
+
+
+
+.user:before, .user:after , #tutorial:before , #tutorial:after{
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #00FFFF,#89CFF0, #7393B3,#0096FF,#0047AB , #088F8F,
+    #6495ED, #1434A4,#7DF9FF,#5D3FD3 );
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 35s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 150% 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 150% 0;
+	}
+}
+
+.user:after , #grid:after , #tutorial:after{
+	filter: blur(10px);
+}
+
+
+#grid:before , #grid:after{
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, white , grey);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 35s linear infinite;
+}
+
+
+#pause{
+left: calc(50% - 430px);
+}
+
+.button{
+position: absolute;
+width: 120px;
+height:30px;
+font-family: tetris;
+font-size: 25px;
+cursor: pointer;
+left: calc(50% - 300px);
+border-radius: 10px;
+color: white;
+top:550px;
+
+}
+
